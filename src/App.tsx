@@ -1,25 +1,33 @@
 import React from 'react';
 import logo from './logo.svg';
+import { useSpring, animated } from 'react-spring'
 import './App.css';
 
-function App() {
+const App: React.FC = () => {
+  // Testing the useSpring hook
+  const styles = useSpring({
+    to: async (next, cancel) => {
+      await next({ opacity: 1 })
+      await next({ opacity: 0 })
+    },
+    from: { opacity: 0, color: 'red' },
+    loop: true,
+    delay: 300,
+    
+    
+  })
+  
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="title">
+        <h1>Learning React Spring</h1>
+        </div>
+     <animated.div style={styles}>
+       <img src={logo} className="App-logo" alt="App Logo" />
+     </animated.div>
     </div>
+    
   );
 }
 
