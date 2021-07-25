@@ -2,15 +2,17 @@ import React from 'react';
 import logo from './logo.svg';
 import { useSpring, animated } from 'react-spring' // <-- import the spring component and the animated component
 import './App.css';
+import ProductList from './components/ProductList';
 
 
 
 const App: React.FC = () => {
   /**
    * styles object is used to pass in a style attribute that will be applied to the div
-   */
-  const styles = useSpring({
-    to: async (next, cancel) => {
+   
+   const styles = useSpring({
+    to: 
+    async (next, cancel) => {
       await next({ opacity: 1 }) // within the to property, you can chain multiple animations together.
       await next({ opacity: 0 }) 
     },
@@ -20,6 +22,7 @@ const App: React.FC = () => {
     
     
   })
+  */
   /**
    * We can pass in a style object to the animated component
    * We can also use modify a div using React spring's 'animated' which enables native rendering
@@ -28,14 +31,17 @@ const App: React.FC = () => {
    *  */
   return (
     
-    <div className="App">
+    /*<div className="App">
       <div className="title">
         <h1>Learning React Spring</h1> 
         </div>
      <animated.div style={styles}>
        <img src={logo} className="App-logo" alt="App Logo" />
      </animated.div>
-    </div>
+    </div>*/
+    
+    <ProductList/>
+    
     
   );
 }
