@@ -1,6 +1,16 @@
 # React Spring Exploration
 
-The primary aim of this repository is to learn and assist others learn react spring by building fully animated e-commerce react components.  
+The primary aim of this repository is to learn and assist others learn react spring by building fully animated e-commerce react components. This would eventually be connected to a [NestJs] backend to demonstrate Server-Side rendering of products and possibly images on the carousel.
+
+
+## Todos
+
+- Set up tailwind css
+- Add basic ecommerce starter page
+- Add basic animation to any component for illustration ✅
+- Get better looking components from [shuffle.dev](https://shuffle.dev)
+- Create NestJS API for products
+ **more incoming...**
 
 
 ## Contributions
