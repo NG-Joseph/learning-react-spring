@@ -10,6 +10,7 @@ The primary aim of this repository is to learn and assist others learn react spr
 - Add basic animation to any component for illustration ✅
 - Get better looking components from [shuffle.dev](https://shuffle.dev)
 - Create NestJS API for products
+
  **more incoming...**
 
 
