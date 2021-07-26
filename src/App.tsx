@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import { useSpring, animated } from 'react-spring' // <-- import the spring component and the animated component
 import './App.css';
 import ProductList from './components/ProductList';
+import { Navbar } from './components/Navbar';
+import { Carousel } from './components/Carousel';
 
 
 
@@ -39,8 +41,11 @@ const App: React.FC = () => {
        <img src={logo} className="App-logo" alt="App Logo" />
      </animated.div>
     </div>*/
-    
+    <body className="bg-white text-gray-600 work-sans leading-normal text-base tracking-normal">
+    <Navbar/>
+    <Carousel/>
     <ProductList/>
+    </body>
     
     
   );
