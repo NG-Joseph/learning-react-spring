@@ -1,6 +1,6 @@
 # React Spring Exploration
 
-The primary aim of this repository is to learn and assist others learn react spring by building fully animated e-commerce react components. This would eventually be connected to a [NestJs] backend to demonstrate rendering of product data from backend to frontend.
+The primary aim of this repository is to learn and assist others learn react spring by building fully animated e-commerce react components. This would eventually be connected to a [NestJs](http://www.docs.nestjs.com) backend to demonstrate rendering of product data dynamically from backend to frontend.
 
 
 ## Todos
