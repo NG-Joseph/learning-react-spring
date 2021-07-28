@@ -45,7 +45,7 @@ const App: React.FC = () => {
     <div className='overflow-visible z-20' style={{position:'relative' ,zIndex:30, overflow:'visible'}}>
     <Navbar/>
     </div>
-    <div className='overflow-visible z-0' style={{ position:'relative',zIndex:20, overflow:'auto'}}>
+    <div className='overflow-visible z-0' style={{ position:'relative',zIndex:20  , overflow:'auto'}}>
     <Carousel/>
     </div>
     <ProductList/>
