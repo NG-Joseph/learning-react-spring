@@ -1,16 +1,27 @@
 import { useState } from "react"
 import { BiSearch, BiCaretDown, BiCheck, BiLogIn, BiCustomize, BiMoney, BiGroup, BiLogOut } from "react-icons/bi"
+import { animated, useSpring } from "react-spring"
 
+
+
+/**
+ * Droppable component for the navbar profile section
+*/
 const ProfileDropDown = ({toggle}) =>{
     if (!toggle) {
         return null
     }
+
+  
+
+    
     
     
 
     return (
-        <div className="overflow-hidden z-30">
-      <div className="origin-top-right absolute right-20 mt-2 w-30
+
+        <div  className="overflow-hidden z-30">
+      <div className="origin-top-right absolute right-20 mt-2 w-40  
         rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
         <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
           <div
@@ -24,7 +35,7 @@ const ProfileDropDown = ({toggle}) =>{
             role="menuitem">Request Refund <BiMoney /></div>
           <div
             className="px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 flex justify-between cursor-pointer border-gray-1 border-t-2"
-            role="menuitem">Join Affiliate Program <BiGroup /></div>
+            role="menuitem">Affiliate Program <BiGroup /></div>
           <div
             className="px-4 py-2 text-sm text-gray-700 hover:bg-red-100 hover:text-gray-900 flex justify-between cursor-pointer"
             role="menuitem">Log out <BiLogOut /></div>
@@ -34,9 +45,23 @@ const ProfileDropDown = ({toggle}) =>{
     )
   }
 
+  /**
+   * Navigation bar component
+   * */
+
 export const Navbar: React.FC = () => {
     const [toggleProfileDropDown, setToggleProfileDropDown] = useState(false);
-
+    const styles = useSpring({
+        to: 
+        async (next, cancel) => {
+          await next({opacity: toggleProfileDropDown? 1:0 }) // within the to property, you can chain multiple animations together.
+          
+        },
+        from: { opacity: 0 }, // set initial animation state
+        loop: false, // loop the animation sequence
+        delay: 200, // delay between animations
+    })
+   
 return (
     
 <nav onClick={() => {if(toggleProfileDropDown){setToggleProfileDropDown(false)}}} id="header" className="w-full z-30 top-0 py-1">
@@ -76,7 +101,8 @@ return (
                 <path d="M12 2C9.243 2 7 4.243 7 7s2.243 5 5 5 5-2.243 5-5S14.757 2 12 2zM12 10c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3S13.654 10 12 10zM21 21v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h2v-1c0-2.757 2.243-5 5-5h4c2.757 0 5 2.243 5 5v1H21z" />
             </svg>
         </a>
-        <ProfileDropDown toggle={toggleProfileDropDown}/>
+        <animated.div style={styles}>
+        <ProfileDropDown toggle={toggleProfileDropDown}/></animated.div>
         <a  className="pl-3 inline-block no-underline hover:text-black" href="#">
             <svg className="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                 <path d="M21,7H7.462L5.91,3.586C5.748,3.229,5.392,3,5,3H2v2h2.356L9.09,15.414C9.252,15.771,9.608,16,10,16h8 c0.4,0,0.762-0.238,0.919-0.606l3-7c0.133-0.309,0.101-0.663-0.084-0.944C21.649,7.169,21.336,7,21,7z M17.341,14h-6.697L8.371,9 h11.112L17.341,14z" />
