@@ -42,8 +42,12 @@ const App: React.FC = () => {
      </animated.div>
     </div>*/
     <body className="bg-white text-gray-600 work-sans leading-normal text-base tracking-normal">
+    <div className='overflow-visible z-20' style={{position:'relative' ,zIndex:30, overflow:'visible'}}>
     <Navbar/>
+    </div>
+    <div className='overflow-visible z-0' style={{ position:'relative',zIndex:20, overflow:'auto'}}>
     <Carousel/>
+    </div>
     <ProductList/>
     </body>
     

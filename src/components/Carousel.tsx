@@ -1,5 +1,10 @@
+import { useTransition } from "react-spring";
+import { Navbar } from "./Navbar";
+
 export const Carousel:React.FC =  () =>{
     return (
+
+    
 
 <div className="carousel relative container mx-auto" style={{maxWidth:"1600px"}}>
 <div className="carousel-inner relative overflow-hidden w-full">
