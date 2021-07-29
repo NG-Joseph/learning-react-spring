@@ -48,7 +48,7 @@ const ProductList: React.FC = () =>{
                                 <path d="M7 11H17V13H7zM4 7H20V9H4zM10 15H14V17H10z" />
                             </svg>
                         </animated.a>
-                        <input className="shadow appearance-none border rounded w-full py-1/2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="search" type="text" placeholder="Search" hidden={!searchActive}/>
+                        <input className="shadow appearance-none border rounded w-full py-1/2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline select-none" id="search" type="text" placeholder="Search" hidden={!searchActive}/>
 
                         <animated.a onClick={() => setSearchActive(!searchActive)} style= {searchStyles} className="pl-3 inline-block no-underline hover:text-black" >
                             <svg className="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
