@@ -15,7 +15,7 @@ The primary aim of this repository is to learn and assist others learn react spr
 - Map products to display on react component ✅
 - Add search by category and name
 - Add sort feature 
-- Add product modal onProduct click
+- Add modal onProductClick
 
 
 
