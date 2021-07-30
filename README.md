@@ -11,7 +11,7 @@ The primary aim of this repository is to learn and assist others learn react spr
 - Get better looking Tailwind components from [shuffle.dev](https://www.shuffle.dev)
 - Animate carousel (useTransition)
 - Override existing animations with spring 
-- Create NestJS API for products
+- Create NestJS API for products ✅
 - Map products to display on react component
 
 
