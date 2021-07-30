@@ -12,7 +12,9 @@ The primary aim of this repository is to learn and assist others learn react spr
 - Animate carousel (useTransition)
 - Override existing animations with spring 
 - Create NestJS API for products ✅
-- Map products to display on react component
+- Map products to display on react component ✅
+- Add search by category and name
+- Add sort feature 
 
 
 
