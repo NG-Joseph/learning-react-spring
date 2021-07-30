@@ -15,9 +15,9 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
         name: 'default',
         host: configService.get('POSTGRES_HOST', ),
         port: configService.get('POSTGRES_PORT'),
-        username: configService.get('POSTGRES_USER', 'postgres'),
-        password: configService.get('POSTGRES_PASSWORD', 'coolpolice1'),
-        database: configService.get('POSTGRES_DB', 'react-ecommerce'),
+        username: configService.get('POSTGRES_USER', ),
+        password: configService.get('POSTGRES_PASSWORD', ),
+        database: configService.get('POSTGRES_DB',),
         entities: ["dist/**/*.entity{.ts,.js}"],
         synchronize: true,
         autoLoadEntities: true
