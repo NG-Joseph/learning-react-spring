@@ -1,4 +1,4 @@
-export class CreateProductDto {
+export interface ProductDto{
     productName: string;
     productPrice: number;
     productDescription: string;
@@ -6,9 +6,7 @@ export class CreateProductDto {
     productImageUrl: string;
     productQuantity: number; 
     
-    
 }
-
 
 export enum EnumProductCategories {
     Fashion = "fashion",
@@ -17,6 +15,3 @@ export enum EnumProductCategories {
     Electronics = "electronics",
     Furniture = "furniture",
 }
-
-    
-

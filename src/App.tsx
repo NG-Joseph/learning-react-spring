@@ -5,6 +5,7 @@ import './App.css';
 import ProductList from './components/ProductList';
 import { Navbar } from './components/Navbar';
 import { Carousel } from './components/Carousel';
+import { Footer } from './components/Footer';
 
 
 
@@ -49,6 +50,7 @@ const App: React.FC = () => {
     <Carousel/>
     </div>
     <ProductList/>
+    <Footer/>
     </body>
     
     
