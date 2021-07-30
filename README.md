@@ -3,7 +3,7 @@
 The primary aim of this repository is to learn and assist others learn react spring by building fully animated e-commerce react components. This would eventually be connected to a [NestJs](http://www.docs.nestjs.com) backend to demonstrate rendering of product data dynamically from server to client.
 
 
-## Todos
+## To Do
 
 - Set up tailwind css ✅
 - Add basic ecommerce starter page ✅
