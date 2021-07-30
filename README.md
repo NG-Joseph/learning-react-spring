@@ -29,7 +29,9 @@ Feel free to clone or fork and make PRs to improve on what we currently have! âš
 ` $ cd learning-react-spring`
 
 
-` $ npm install`
+` $ npm install && cd react-spring-backend && npm install`
+
+
 
 The project already has [Tailwind](https://tailwindcss.com/) set up, but if you would like to set it up yourself or modify some settings [check this link out.](https://www.smashingmagazine.com/2020/02/tailwindcss-react-project/)
 
