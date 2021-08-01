@@ -13,7 +13,7 @@ const ProductList: React.FC = () => {
 
   const [products, setProducts] = useState<ProductDto[]>([]); // set initial state to empty array
   const [query, setQuery] = useState<string>(""); //set initial state to empty string
-  const filteredProducts = products.filter(product => product.productName.toLowerCase().includes(query.toLowerCase()))
+  const filteredProducts = products.filter(product => product.productName.toLowerCase().includes(query.toLowerCase()) || product.productCategory.toLowerCase().includes(query.toLowerCase())) 
   
 
   const styles = useSpring({
